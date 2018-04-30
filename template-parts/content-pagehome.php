@@ -15,8 +15,8 @@ get_header();
 
 <div class="slide-principal">
 <?php 
-	$args = array( 'post_type' => 'post');
-	$loop = new WP_Query( $args ); 
+	$args = array( 'post_type' => 'post', 'category_name' => 'destacados');
+	$loop = new WP_Query( $args );
  
 	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
