@@ -1338,6 +1338,22 @@ ul.nav-menu li {
 	margin-bottom: 2em;
 }
 
+.title__shop{
+	padding: 2em;
+	text-align: center;
+}
+
+.title__shop h2{
+	color: #DAC1AA;
+	border-bottom: 1px solid #DAC1AA;
+	font-family: 'Lora', serif;	
+	font-weight: 700;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	margin: 2em;
+}
+
+
 /******************* carrito ***********************************/
 .cart-contents:before {
     font-family:WooCommerce;

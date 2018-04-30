@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
+get_header(  ); ?>
 
 	<?php
 		/**
@@ -33,26 +33,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
-    <header class="woocommerce-products-header">
-
-		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-
-			<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-
-		<?php endif; ?>
-
-		<?php
-			/**
-			 * woocommerce_archive_description hook.
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 */
-			do_action( 'woocommerce_archive_description' );
-		?>
-
-    </header>
-
+ 
 		<?php if ( have_posts() ) : ?>
 
 			<?php
@@ -63,7 +44,7 @@ get_header( 'shop' ); ?>
 				 * @hooked woocommerce_result_count - 20
 				 * @hooked woocommerce_catalog_ordering - 30
 				 */
-				do_action( 'woocommerce_before_shop_loop' );
+				// do_action( 'woocommerce_before_shop_loop' );
 			?>
 
 			<?php woocommerce_product_loop_start(); ?>
@@ -71,7 +52,11 @@ get_header( 'shop' ); ?>
 				<div class="container">
 					<div class="row">
 						<?php woocommerce_product_subcategories(); ?>
-
+							<div class="col-md-12">
+								<div class="title__shop">
+									<h2>PAINTINGS</h2>
+								</div>
+							</div>
 							<?php while ( have_posts() ) : the_post(); ?>
 
 								<?php
@@ -129,7 +114,7 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		do_action( 'woocommerce_sidebar' );
+		// do_action( 'woocommerce_sidebar' );
 	?>
 
 <?php get_footer( 'shop' ); ?>
