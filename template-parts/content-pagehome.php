@@ -17,7 +17,7 @@ get_header();
 <?php 
 	$args = array( 'post_type' => 'post', 'category_name' => 'destacados');
 	$loop = new WP_Query( $args );
-
+ 
 	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
 		<div class="slide__item" style="background-image: url( <?php the_post_thumbnail_url('full'); ?>);">			 	
