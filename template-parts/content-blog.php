@@ -2,7 +2,7 @@
 
 /*Template: Content-blog
 */
-	$args = array( 'post_type' => 'post' ,'posts_per_page' => 2 );
+	$args = array( 'post_type' => 'post' ,'posts_per_page' => 2, 'category__not_in' => 35 );
 	$loop = new WP_Query( $args );
 
 	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -12,7 +12,7 @@
 			<div class="post-scuare">
 				<p><?php the_date(); ?></p>
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<p class="post-categories"><b> <?php the_category( ', ' ); ?>					
+				<p class="post-categories"><b> <?php the_category( '' ); ?>					
 				</b></p>
 			</div>
 		</div>
