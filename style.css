@@ -1333,6 +1333,12 @@ ul.nav-menu li {
 	padding-top: 4em;
 }
 
+
+.titulos__blog{
+	height: 30px;
+	margin-bottom: 2em;
+}
+
 /******************* carrito ***********************************/
 .cart-contents:before {
     font-family:WooCommerce;
