@@ -4,7 +4,7 @@
 */
 ?>
 
-<h4>Mi Work</h4>
+<h4>My Work</h4>
 <h3>Categories</h3>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
