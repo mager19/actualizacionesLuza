@@ -20,10 +20,11 @@
 				</b></p>
 			</div>
 		</div>
-	</div>
+	
 	<?php endwhile; ?>
 	<!-- post navigation -->
 	<?php else: ?>
 	<!-- no posts found -->
+	</div>
 	<?php endif; ?>
 	<?php wp_reset_postdata();?>
