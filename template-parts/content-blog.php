@@ -5,9 +5,13 @@
 	$args = array( 'post_type' => 'post' ,'posts_per_page' => 2, 'category__not_in' => 35 );
 	$loop = new WP_Query( $args );
 
-	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	<!-- post -->
-	<div class="col-md-6">
+	if ( $loop->have_posts() ) : ?>
+
+		<div class="col-md-6">
+		
+		<?php
+		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	
 		<div class="post-entry" style="background: url(<?php the_post_thumbnail_url(); ?>);background-size: cover;">
 			<div class="post-scuare">
 				<p><?php the_date(); ?></p>
