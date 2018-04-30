@@ -23,7 +23,7 @@ get_header(); ?>
 						<div class="header-about-content">
 							<div class="col-md-5">
 								<?php the_post_thumbnail(); ?>
-								<div class="subtitle">subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quos vitae minima, neque voluptatibus magni. Quasi molestias quam, facere eligendi asperiores nulla.</div>
+								<!-- <div class="subtitle">subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quos vitae minima, neque voluptatibus magni. Quasi molestias quam, facere eligendi asperiores nulla.</div> -->
 							</div>
 							<div class="col-md-7">
 								<div class="about-description"><?php the_content(); ?></div>
