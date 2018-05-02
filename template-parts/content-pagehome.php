@@ -15,13 +15,13 @@ get_header();
 
 <div class="slide-principal">
 <?php 
-	$args = array( 'post_type' => 'post', 'category_name' => 'destacados');
+	$args = array( 'post_type' => 'product', 'product_cat' => 'featured');
 	$loop = new WP_Query( $args );
  
 	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		
 		<div class="slide__item" style="background-image: url( <?php the_post_thumbnail_url('full'); ?>);">			 	
-		 	<h1><?php the_title(); ?></h1>			 	
+		 	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>			 	
 		</div>			
 	<!-- post -->
 	<?php endwhile; ?>
@@ -45,7 +45,7 @@ get_header();
 
 						if ($loop->have_posts() ) : while ($loop->have_posts() ) :$loop->the_post(); ?>
 						<!-- post -->
-						<div class="col-md-7">
+						<div class="col-md-6">
 							<div class="information--left__info">
 								<h4>About Me</h4>
 								<h3>Hi Everyone my name is LuzA! </h3>
@@ -53,7 +53,7 @@ get_header();
 								<a href="<?php the_permalink(); ?>" class="boton boton--verde">Read More</a>
 								</div>
 						</div>
-						<div class="col-md-5">
+						<div class="col-md-6">
 							<div class="information--left__imagen" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
 							</div>							
 						</div>
