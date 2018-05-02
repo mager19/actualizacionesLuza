@@ -1355,6 +1355,10 @@ ul.nav-menu li {
 
 
 /******************* carrito ***********************************/
+#primary-menu > li.menu-item.menu-item-type-cart.menu-item-type-woocommerce-cart > a{
+	color:#ccc!important;
+}
+
 .cart-contents:before {
     font-family:WooCommerce;
     content: "\e01d";
