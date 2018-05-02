@@ -51,9 +51,14 @@ if ( ! function_exists( 'desarrollos_setup' ) ) :
 		register_nav_menus( array(
 			'social-networks' => esc_html__( 'Social Networks', 'desarrollos' ),
 		) );
-		register_nav_menus( array(
-			'menu-footer' => esc_html__( 'Footer', 'desarrollos' ),
-		) );
+
+		/* MENU PRIVACIDAD */
+
+		// register_nav_menus( array(
+		// 	'menu-footer' => esc_html__( 'Footer', 'desarrollos' ),
+		// ) );
+
+		
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -395,13 +400,3 @@ return $fragments;
 add_filter( 'add_to_cart_fragments', 'wpex_main_menu_cart_link_fragments' );
 
 
-//quitar los links a las imagenes
-function wpb_imagelink_setup() {
- $image_set = get_option( 'image_default_link_type' );
- 
- if ($image_set !== 'none') {
- update_option('image_default_link_type', 'none');
- }
- } 
- 
-add_action('admin_init', 'wpb_imagelink_setup', 10);
