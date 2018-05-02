@@ -956,7 +956,7 @@ object {
 }
 
 .information--left__info{
-	padding: 3em;
+	padding: 2em 0 2em 3em;
 	min-height: 400px;
 }
 
@@ -1310,6 +1310,11 @@ ul.nav-menu li {
 .about-description{
 	padding: 0 2em;
 	text-align: justify;
+	padding-top: 4em;
+}
+
+.about-description p{
+	font-size: 1.2em;
 }
 
 .about-relacionados{
