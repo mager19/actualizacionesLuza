@@ -393,3 +393,15 @@ $fragments['.wpex-menu-cart-total'] = wpex_menu_cart_item();
 return $fragments;
 }
 add_filter( 'add_to_cart_fragments', 'wpex_main_menu_cart_link_fragments' );
+
+
+//quitar los links a las imagenes
+function wpb_imagelink_setup() {
+ $image_set = get_option( 'image_default_link_type' );
+ 
+ if ($image_set !== 'none') {
+ update_option('image_default_link_type', 'none');
+ }
+ } 
+ 
+add_action('admin_init', 'wpb_imagelink_setup', 10);
