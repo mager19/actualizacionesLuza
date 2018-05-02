@@ -51,14 +51,9 @@ if ( ! function_exists( 'desarrollos_setup' ) ) :
 		register_nav_menus( array(
 			'social-networks' => esc_html__( 'Social Networks', 'desarrollos' ),
 		) );
-
-		/* MENU PRIVACIDAD */
-
-		// register_nav_menus( array(
-		// 	'menu-footer' => esc_html__( 'Footer', 'desarrollos' ),
-		// ) );
-
-		
+		register_nav_menus( array(
+			'menu-footer' => esc_html__( 'Footer', 'desarrollos' ),
+		) );
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.

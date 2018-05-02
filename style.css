@@ -1105,6 +1105,10 @@ header.header {
     color: #000;
 }
 
+.menu-final-container{
+	display: none;
+}
+
 nav#site-navigation {
     width: auto;
     padding-top: 3%;
