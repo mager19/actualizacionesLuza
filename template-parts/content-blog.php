@@ -12,7 +12,7 @@
 			<div class="post-scuare">
 				<p><?php the_date(); ?></p>
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<p class="post-categories"><b> <?php the_category( '' ); ?>					
+				<p class="post-categories"><b> <?php the_category( ', ' ); ?>					
 				</b></p>
 			</div>
 		</div>
