@@ -1431,10 +1431,10 @@ a.cart-contents {
 	}
 
 	.content-contact form {
-	    margin-left: 0%;
+	    margin-left: 0%!important;
 	    margin-bottom: 4em;
-	    margin-top: 2em;
-	    width: 90%;
+	    margin-top: 2em!important;
+	    width: 90%!important;
 	}
 }
 
