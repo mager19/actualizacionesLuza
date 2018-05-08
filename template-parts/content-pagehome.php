@@ -36,7 +36,7 @@ get_header();
 <section class="information contenedor">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-8 col-xs-12">
 				<div class="information--left">
 					<div class="row">
 						<?php 
@@ -45,7 +45,7 @@ get_header();
 
 						if ($loop->have_posts() ) : while ($loop->have_posts() ) :$loop->the_post(); ?>
 						<!-- post -->
-						<div class="col-md-6">
+						<div class="col-md-6 col-xs-12">
 							<div class="information--left__info">
 								<h4>About Me</h4>
 								<h3>Hi Everyone my name is LuzA! </h3>
@@ -53,7 +53,7 @@ get_header();
 								<a href="<?php the_permalink(); ?>" class="boton boton--verde">Read More</a>
 								</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-xs-12">
 							<div class="information--left__imagen" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
 							</div>							
 						</div>
