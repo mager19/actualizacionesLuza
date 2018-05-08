@@ -1429,6 +1429,13 @@ a.cart-contents {
 	#main > ul{
 		padding: 1em 2em;
 	}
+
+	.content-contact form {
+	    margin-left: 0%;
+	    margin-bottom: 4em;
+	    margin-top: 2em;
+	    width: 90%;
+	}
 }
 
 @media screen and (max-width: 420px){
